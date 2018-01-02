@@ -1,2 +1,2 @@
-include ':app', ':opensourcelibrary', ':openlibrary'
+include ':app', ':opensourcelibrary'
 rootProject.name = 'com.lkmc2.logs'
