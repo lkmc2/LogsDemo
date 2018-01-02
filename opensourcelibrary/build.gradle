@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.lkmc2'
+group='com.lkmc2.logs'
 version = '3.0'
 
 android {
