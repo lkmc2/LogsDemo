@@ -18,6 +18,7 @@ dependencies {
 	compile 'com.github.lkmc2:LogsDemo:v7.0'
 }
 ```
+</br></br></br>
 
 本开源库的使用方法如下：
 1.可与android.util.Log有着一样的使用方法，此方式默认的全局TAG名为LogInfo：
@@ -36,7 +37,7 @@ Logs.t("safe").i("Just close your eyes");
 ```
 
 以上三种方式除了i(String)方法外，都含有e(String)、w(String)、d(String)、v(String)方法。
-
+</br></br></br>
 
 PS：
  * 1.如果是想全局打印同一个Log名，直接修改下面的TAG变量的名称，然后使用类名 + 点 + 方法名即可，
