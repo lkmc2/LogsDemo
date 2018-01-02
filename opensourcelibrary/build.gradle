@@ -3,6 +3,7 @@ apply plugin: 'com.github.dcendents.android-maven'
 group='com.lkmc2.logs'
 version = '3.0'
 
+
 android {
     compileSdkVersion 26
 
