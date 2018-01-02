@@ -15,8 +15,11 @@ import java.util.Arrays;
  * 2.如果想每一个Activity都使用不同的Log名，直接在t(String)方法中传入自定义的TAG名，然后再调用方法，
  * 如：Log.t("自定义的TAG名").v("你想输入的信息");
  *
- * 3.如果想每一个Activity都使用不同的Log名，又不想另行定义TAG名，直接在t(Context)方法中传入Activity的Context，
+ * 3.如果想每一个Activity都使用不同的Log名，又不想另行定义TAG名，直接在t(Activity)方法中传入Activity的Context，
  * 然后再调用方法，如：Log.t(this).v("你想输入的信息");，这时将类名作为TAG名（不含包名）;
+ *
+ * 4.使用t(String)或者t(Activity)方法后，全局TAG的名字将永久改变，不建议将Log.v(String)方法与
+ * Log.t(String).v(String)混搭使用。要么只使用Log.v(String)，或者只使用Log.t(String).v(String)的方式。
  *
  * 4.如果不喜欢编译器出现黄线警告，可在类上添加@SuppressWarnings("AccessStaticViaInstance")注解。
  */
