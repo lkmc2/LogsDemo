@@ -1,2 +1,1 @@
 include ':app', ':opensourcelibrary'
-rootProject.name = 'logsdemo'
