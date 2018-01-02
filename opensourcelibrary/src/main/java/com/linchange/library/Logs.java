@@ -57,64 +57,67 @@ public final class Logs {
         }
         return Holder.INSTANCE;
     }
-
-    /**
-     * 判断是否开启日志打印
-     */
-    private static void ifDebug() {
-        if (!DEBUG) return;
-    }
     
     public static void v(final String msg) {
-        ifDebug();
-        Log.v(TAG, msg);
+        if (DEBUG) {
+            Log.v(TAG, msg);
+        }
     }
 
     public static void e(final String msg) {
-        ifDebug();
-        Log.e(TAG, msg);
+        if (DEBUG) {
+            Log.e(TAG, msg);
+        }
     }
 
     public static void w(final String msg) {
-        ifDebug();
-        Log.w(TAG, msg);
+        if (DEBUG) {
+            Log.w(TAG, msg);
+        }
     }
 
     public static void i(final String msg) {
-        ifDebug();
-        Log.i(TAG, msg);
+        if (DEBUG) {
+            Log.i(TAG, msg);
+        }
     }
 
     public static void d(final String msg) {
-        ifDebug();
-        Log.d(TAG, msg);
+        if (DEBUG) {
+            Log.d(TAG, msg);
+        }
     }
 
     //以下方法是上面静态方法的重载，防止Android Studio中实例无法调用静态方法
 
     public void v(final String... msg) {
-        ifDebug();
-        Log.v(TAG, Arrays.toString(msg));
+        if (DEBUG) {
+            Log.v(TAG, Arrays.toString(msg));
+        }
     }
 
     public void e(final String... msg) {
-        ifDebug();
-        Log.e(TAG, Arrays.toString(msg));
+        if (DEBUG) {
+            Log.e(TAG, Arrays.toString(msg));
+        }
     }
 
     public void w(final String... msg) {
-        ifDebug();
-        Log.w(TAG, Arrays.toString(msg));
+        if (DEBUG) {
+            Log.w(TAG, Arrays.toString(msg));
+        }
     }
 
     public void i(final String... msg) {
-        ifDebug();
-        Log.i(TAG, Arrays.toString(msg));
+        if (DEBUG) {
+            Log.i(TAG, Arrays.toString(msg));
+        }
     }
 
     public void d(final String... msg) {
-        ifDebug();
-        Log.d(TAG, Arrays.toString(msg));
+        if (DEBUG) {
+            Log.d(TAG, Arrays.toString(msg));
+        }
     }
 
 }
