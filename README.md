@@ -22,17 +22,17 @@ dependencies {
 
 本开源库的使用方法如下：
 1.可与android.util.Log有着一样的使用方法，此方式默认的全局TAG名为LogInfo：
-```
+```java
 Logs.i("When all those shadows almost killed your light");
 ```
 
 2.可直接传入Activity的Context，此方式的TAG名为Activity的类名（不含包名）：
-```
+```java
 Logs.t(this).i("Come morning light, you and I'll be safe and sound");
 ```
 
 3.可自定义TAG名：
-```
+```java
 Logs.t("safe").i("Just close your eyes");
 ```
 
